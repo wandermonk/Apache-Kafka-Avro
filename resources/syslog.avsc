@@ -1,0 +1,39 @@
+{
+    "namespace": "com.cisco.sso.daas.avro",
+    "type": "record",
+    "name": "SysLogMessage",
+    "fields": [{
+            "name": "partyID",
+            "type": "long"
+        },
+        {
+            "name": "applianceID",
+            "type": "string"
+        },
+        {
+            "name": "message",
+            "type": "string"
+        },
+        {
+            "name": "severity",
+            "type": "long"
+        },
+        {
+            "name": "messageType",
+            "type": "string"
+        },
+        {
+            "name": "eventtime",
+            "type": "long",
+            "logicalType": "timestamp-millis"
+        },
+        {
+            "name": "ipaddress",
+            "type": "string"
+        },
+        {
+            "name": "hostname",
+            "type": "string"
+        }
+    ]
+}
